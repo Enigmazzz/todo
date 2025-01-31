@@ -16,10 +16,11 @@ body {
 }
 
 .todo {
-    padding: 38px 16px 0;
+    padding: 38px 16px;
     background-color: #fff;
-    width: 805px;
-    height: auto; 
+    width: 100%;
+    /* width: 805px; */
+    /* height: auto; */
     top: 215px;
     left: 237px;
     border-radius: 10px;
@@ -58,7 +59,7 @@ input:focus-visible {
 .todo__new {
     --size: 50px;
     display: flex;
-    margin: 16px 0px 32px;
+    /* margin: 16px 0px 32px; */
 }
 
 .todo__new input {
@@ -84,6 +85,7 @@ input:focus-visible {
     color: #fff;
     text-transform: uppercase;
     padding: 10px 0;
+    margin-right: 16px;
 }
 
 .todo__tasks {
@@ -117,6 +119,10 @@ input:focus-visible {
     width: 100%;
     margin-top: 10px;
 }
+/* tut */
+.todo__edit-block.show {
+    display: flex;} 
+    /* tut */
 
 .todo__edit-input {
     width: 100%;
