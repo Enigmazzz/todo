@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ToDo List</title>
-  <link rel="stylesheet" href="todocss.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -13,12 +13,26 @@
     <div class="todo">
       <div class="todo__content">
         <h1 class="todo__title">Todo List</h1>
+        
         <div class="todo__add-block">
           <div class="todo__new">
             <input id="task-input" type="text" placeholder="Add Todo">
             <button class="todo__add">Add</button>
+            
+            
           </div>
+          <div>
+            
+            <select class="todo__options">
+              <option value="all" data-todo-action="all">ALL</option>
+              <option value="active" data-todo-action="active">ACTIVE</option>
+              <option value="completed" data-todo-action="completed">COMPLETED</option>
+            </select>
+          </div>
+
         </div>
+        <input type="date" id="dateInput">
+
         <div class="todo__list">
           <div class="todo__tasks">
           </div>
@@ -26,7 +40,7 @@
       </div>
     </div>
   </div>
-  <script src="todoJS.js"></script>
+  <script src="JS.js"></script>
 </body>
 
 </html>
